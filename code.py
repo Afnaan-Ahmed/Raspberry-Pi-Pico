@@ -66,6 +66,7 @@ keyboard.press(Keycode.ALT)
 keyboard.press(Keycode.T)
 keyboard.release_all()
 time.sleep(2)
-type_string("echo 'You have been hacked' > /home/`whoami`/note.txt && mousepad /home/`whoami`/note.txt")
+command = "echo 'You have been hacked' > /home/`whoami`/note.txt && mousepad /home/`whoami`/note.txt"
+type_string(command)
 keyboard.press(Keycode.ENTER)
 keyboard.release_all()
